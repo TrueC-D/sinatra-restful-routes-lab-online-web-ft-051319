@@ -3,6 +3,8 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
+  
+  get ('/') {}
 
   get '/recipes' do
     @Recipes = Recipe.all
