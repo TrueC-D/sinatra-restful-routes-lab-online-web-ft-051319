@@ -15,6 +15,8 @@ class ApplicationController < Sinatra::Base
     Recipe.find_by(params[:id])
   end
   
+  get ''
+  
   
 
 end
